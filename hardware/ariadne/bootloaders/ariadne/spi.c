@@ -143,16 +143,16 @@ void spiInit(void)
 
 	/** Disable SD card */
 	/** Set SD SS pin high */
-	SD_PORT |= _BV(SD_SS);
+	// SD_PORT |= _BV(SD_SS);
 	/** Set SD SS pin as output */
-	SD_DDR |= _BV(SD_SS);
+	// SD_DDR |= _BV(SD_SS);
 
 	#if (LED != SCK)
 	/** Set up pins to flash the onboard led */
 	/** Set led pin to high */
-	LED_PORT |= _BV(LED);
+	// LED_PORT |= _BV(LED);
 	/** Set led pin as output */
-	LED_DDR |= _BV(LED);
+	// LED_DDR |= _BV(LED);
 	#endif
 
 	/** Set up SPI
